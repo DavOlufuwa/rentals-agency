@@ -9,6 +9,12 @@ import { faBars,faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const [menu, setMenu] = useState(true)
+
+  const bodyTag = document.getElementById('body')
+  
+  bodyTag.style.overflow = menu ? "" : "hidden";
+  
+
   return (
     <div className='header-bg'>
       <div className={menu ? 'navigation' : 'navigation show' }>
@@ -19,6 +25,7 @@ const Header = () => {
           <ul>
             <li>
               <Link
+              onClick={()=>setMenu(true)}
               to='player'
               smooth={true}
               >
@@ -27,6 +34,7 @@ const Header = () => {
             </li>
             <li>
               <Link
+                onClick={()=>setMenu(true)}
                 to='fanzone'
                 smooth={true}
 
@@ -36,6 +44,7 @@ const Header = () => {
             </li>
             <li>
               <Link
+                onClick={()=>setMenu(true)}
                 to='player'
                 smooth={true}
               >
@@ -44,6 +53,7 @@ const Header = () => {
             </li>
             <li>
               <Link
+                onClick={()=>setMenu(true)}
                 to='news'
                 smooth={true}
               >
