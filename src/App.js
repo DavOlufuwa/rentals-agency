@@ -1,9 +1,5 @@
 import './App.scss'
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import History from './components/History/History';
-import Intros from './components/Intros/Intros';
-import News from './components/News/News';
+import { subData } from './components/content/subData';
 
 
 
@@ -11,11 +7,13 @@ function App() {
 
   return (   
     <div>
-      <Header/>
-      <Intros/>
-      <History/>
-      <News/>
-      <Footer/>
+        {
+          subData.map((data, index)=>(
+            <div key={index}>
+              <img src={data.image} alt="" />
+            </div>
+          ))
+        }
     </div>
   );
 }

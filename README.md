@@ -1,4 +1,6 @@
-# WINAMP MINIMAL REDESIGN
+# RENTALS AGENCY LANDING PAGE
+This is a home rentals agency website, created using the React Javascript Library.
 
-This project is a redesign of the winamp homepage
-created using react javascript library. 
+React-Router, Framer-motion, SASS and font-awesome were used in the creation of the website
+
+ 
