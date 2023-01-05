@@ -1,5 +1,6 @@
 import './App.scss'
-import Hero from './components/Hero/Hero';
+import Header from './components/Hero/Header';
+
 
 
 
@@ -8,7 +9,7 @@ function App() {
 
   return (   
     <div>
-        <Hero />
+      <Header />
     </div>
   );
 }

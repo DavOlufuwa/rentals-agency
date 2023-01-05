@@ -1,0 +1,101 @@
+
+
+$color: #fff;
+$DM-sans : 'DM Sans', sans-serif;
+$Inter : 'Inter', sans-serif;
+
+.background{
+    height: 100vh;
+}
+
+.hero-bg{
+    height: 95vh;
+    background-image: url('../../assets/images/hero-image.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(87, 85, 85, 0.514);
+    background-blend-mode: multiply;
+    padding: 0 8.75rem;
+    
+}
+
+header{
+
+    display: flex;
+    position: relative;
+    padding: 1rem 0;
+    border-bottom: 1px solid $color;
+    
+    .logo{
+        margin-right: 12rem;
+        cursor: pointer;
+    }
+    // Nav starts
+    nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        ul{
+            list-style: none;
+            display: inline-flex;
+            gap: 3rem;
+
+            li{
+                font-family: $DM-sans;
+                padding: 1rem 1rem 0 1rem ;
+                font-weight: 500;
+                font-size: 18px;
+                a{
+                    text-decoration: none;  
+                    color: $color;    
+                    position: relative; 
+                    padding: 0 10px;        
+                
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        background-color: #fff;
+                        height: 2px;
+                        border-radius: 1px;
+                        width: 0;
+                        left: 0;
+                        bottom: -23px;
+                        transition: 0.3s;
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    // Nav ends
+}
+
+// Hero section starts
+.hero-section{
+    background-color: green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(50%);
+    
+    .text{
+        font-family: $Inter;
+        font-size: 52px;
+        line-height: 70px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: $color;
+        background-color: blue;
+        padding: 3rem;
+        width: 50%;
+    }
+    // .info-map{
+
+    // }
+}
+// Hero section ends
