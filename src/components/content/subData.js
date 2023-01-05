@@ -22,6 +22,6 @@ export const subData =
     },
     {
         image : require('../../assets/icons/moon-sign.svg').default,
-        content: 'Pay for what you use !'
+        content: 'Pay for what you use!'
     },
 ]
