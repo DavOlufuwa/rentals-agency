@@ -6,6 +6,7 @@ import L from 'leaflet';
 import './Header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown , faSearch} from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -16,6 +17,8 @@ L.Icon.Default.mergeOptions({
 });
 
 const Header = () => {
+  const transition = {type:'spring', duration : 3}
+
   return (
     <div className='background'>
     <div className="hero-bg">
@@ -44,10 +47,19 @@ const Header = () => {
       {/* Navigation ends */}
       {/* Hero Section starts */}
       <section className="hero-section">
-        <div className="text">
+        <motion.div 
+          initial ={{opacity: 0, x: -100}}
+          transition = {{...transition, duration: 3}}
+          whileInView = {{opacity: 1, x: 0 }}
+        className="text">
           The most affordable place to stay in the san franciso bay area
-        </div>
-        <div className="info-map">
+        </motion.div>
+        <motion.div
+          initial ={{opacity: 0, x: 100}}
+          transition = {{...transition, duration: 2}}
+          whileInView = {{opacity: 1, x: 0 }}
+          className="info-map"
+         >
           <MapContainer 
             center={[37.788817260213335, -122.4289174721632]} 
             zoom={13} 
@@ -92,7 +104,7 @@ const Header = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       {/* Hero section ends */}
     </div>

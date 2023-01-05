@@ -36,12 +36,14 @@ $radius : 10px;
         display: flex;
         
         .image-content{
-            transform: translateX(-50px);
+            transform: translateX(-50px) !important; 
         }
         .text-content{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            background-color: aqua;
+            row-gap: 2rem;
+            padding: 6rem 0 4rem 0;
+            
             .data-box{
                 display: flex;
                 flex-direction: column;
@@ -50,9 +52,11 @@ $radius : 10px;
                 color: $black;
 
                 .data-sign{
-                    .sign{
-                        background-color: #fff;
+                    img{
                         padding: 1rem;
+                        background-color: #fff;
+                        box-shadow: $shadows;
+                        border-radius: $radius;
                     }
                 }
             }
