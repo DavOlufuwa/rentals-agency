@@ -1,5 +1,6 @@
 import './App.scss'
-import { subData } from './components/content/subData';
+import Hero from './components/Hero/Hero';
+
 
 
 
@@ -7,13 +8,7 @@ function App() {
 
   return (   
     <div>
-        {
-          subData.map((data, index)=>(
-            <div key={index}>
-              <img src={data.image} alt="" />
-            </div>
-          ))
-        }
+        <Hero />
     </div>
   );
 }
