@@ -1,0 +1,64 @@
+$Inter : 'Inter', sans-serif;
+$red : #F4511E;
+$black : #18191f;
+$shadows: 0px 12px 19px 0px #00000026;
+$radius : 10px;
+
+
+
+
+.why-us-bg{
+    padding: 2rem 8.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: $Inter;
+
+    .title{
+        font-size: 36px;
+        font-weight: 800;
+        color: $black;
+        position: relative;
+
+        &::after{
+            content:"";
+            position: absolute;
+            height: 3px;
+            width: 360px;
+            background-color: $red;
+            left: 0;
+            right: 0;
+            bottom: -7px;
+            transition: 0.3s ease-in;
+        }
+    }
+    .content{
+        display: flex;
+        
+        .image-content{
+            transform: translateX(-50px);
+        }
+        .text-content{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: aqua;
+            .data-box{
+                display: flex;
+                flex-direction: column;
+                font-size: 26px;
+                font-weight: 600;
+                color: $black;
+
+                .data-sign{
+                    .sign{
+                        background-color: #fff;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
