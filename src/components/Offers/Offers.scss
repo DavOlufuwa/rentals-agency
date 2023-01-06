@@ -1,0 +1,149 @@
+$Inter : 'Inter', sans-serif;
+$black : #18191f;
+$red : #F4511E;
+$image-radius: 20px;
+$button-radius: 12px;
+
+.offers-bg
+{
+    padding: 3rem 8.75rem;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    .section-one
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        font-family: $Inter;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 1.5rem;
+
+        .row
+        {
+            
+            font-size:24px;            color: #fff;
+            font-weight: 600;
+            position: relative;
+            display: flex;
+            gap: 1.5rem;
+            align-items: baseline;
+
+
+            &:first-of-type{
+                div{
+                    position: relative;
+                    &:first-of-type{
+                        &::after{
+                            position: absolute;
+                            content: "Flexible Leases";
+                            left: 30px;
+                            right: 10px;
+                            top: 30px;
+                            color: #fff; 
+                        }
+                    }
+                    &:last-of-type{
+                        &::after{
+                            position: absolute;
+                            content: "7 Day Happiness guaranteed";
+                            left: 30px;
+                            right: 10px;
+                            top: 30px;
+                            color: #fff; 
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                    }
+                    img{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        filter: brightness(80%);
+                    }
+                }
+            }
+
+            &:last-of-type{
+                align-items: flex-start;
+                div{
+                    position: relative;
+                    &:first-of-type{
+                        &::after{
+                            position: absolute;
+                            content: " Monthly House Cleaning";
+                            text-align: center;
+                            left: 5px;
+                            top: 30px;
+                            color: #fff; 
+                        }
+                    }
+                    &:last-of-type{
+                        &::after{
+                            position: absolute;
+                            content: "Choose your own roommate";
+                            left: 15px;
+                            right: 10px;
+                            top: 30px;
+                            color: #fff; 
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                    }
+                    img{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        filter: brightness(80%);
+                    }
+                }
+            }
+        }
+    }
+    .section-two
+    {
+        
+        font-family: $Inter;
+        background-color: aqua;
+        .text-content{
+            color: $black;
+            h3{
+                font-size: 40px;
+                font-weight: 800;
+            }
+            p{
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+        }
+        .btn{
+            button{
+                padding: 16px 20px;
+                border-radius: 13px;
+                border: none;
+                background-color: $red;
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: #fff;
+                font-family: $Inter;
+                transition: 0.3s;
+
+                &:hover{
+                    box-shadow: 0px 20px 13px 0px #F85A4709;
+                    cursor: pointer;
+                    border: 1px solid $red;
+                    background: transparent;
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+
+

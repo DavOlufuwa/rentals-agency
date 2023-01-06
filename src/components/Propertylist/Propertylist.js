@@ -1,6 +1,9 @@
 import React from 'react'
 import './Propertylist.scss'
 import { propertyListData } from '../Data/propertyListData'
+import Bed from '../../assets/icons/bed.svg'
+import Shower from '../../assets/icons/shower.svg'
+import Size from '../../assets/icons/size.svg'
 
 const Propertylist = () => {
   return (
@@ -24,16 +27,19 @@ const Propertylist = () => {
                             <div>{property.address}</div>
                             <div>{property.roomType}</div>
                             <div>{property.rent}</div>
-                            <div className='footer'>
-                                <div>
-                                    {property.bed}
-                                </div>
-                                <div>
-                                    {property.shower}
-                                </div>
-                                <div>
-                                    {property.size}
-                                </div>
+                        </div>
+                        <div className='footer'>
+                            <div>
+                                <img src={Bed} alt="" />
+                                {property.bed}
+                            </div>
+                            <div>
+                                <img src={Shower} alt="" />
+                                {property.shower}
+                            </div>
+                            <div>
+                                <img src={Size} alt="" />
+                                {property.size}
                             </div>
                         </div>
                     </div>
@@ -42,9 +48,9 @@ const Propertylist = () => {
         </div>
         <div className="menu">
             <div>First</div>
+            <div>1</div>
             <div>2</div>
             <div>3</div>
-            <div>4</div>
             <div>Next</div>
         </div>
 

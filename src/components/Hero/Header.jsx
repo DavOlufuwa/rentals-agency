@@ -1,5 +1,5 @@
 import React from 'react'
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+// import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import Logo from '../../assets/icons/rental-logo.svg'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -60,25 +60,25 @@ const Header = () => {
           whileInView = {{opacity: 1, x: 0 }}
           className="info-map"
          >
-          <MapContainer 
+          {/* <MapContainer 
             center={[37.788817260213335, -122.4289174721632]} 
             zoom={13} 
             scrollWheelZoom={false}
             className="mapOutlook"
           >
-          <TileLayer
-           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker
-            position={[37.788817260213335, -122.4289174721632]}
-          >
-          <Popup 
-            className='pop-up'
-          >
+            <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker
+              position={[37.788817260213335, -122.4289174721632]}
+            >
+            <Popup 
+              className='pop-up'
+            >
               We are here, kindly visit us
-          </Popup>
+            </Popup>
           </Marker>
-          </MapContainer>
+          </MapContainer> */}
           <div className="search-form">
             <div className="info">
               <div>
