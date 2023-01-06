@@ -6,11 +6,9 @@ $button-radius: 12px;
 
 .offers-bg
 {
-    padding: 3rem 8.75rem;
+    padding: 5rem 8.75rem;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
-
+    gap: 1.5rem;
     .section-one
     {
         display: flex;
@@ -19,16 +17,11 @@ $button-radius: 12px;
         gap: 1rem;
         width: 100%;
         font-family: $Inter;
-
-        // display: flex;
-        // flex-wrap: wrap;
-        // gap: 1.5rem;
-
         .row
-        {
-            
-            font-size:24px;            color: #fff;
-            font-weight: 600;
+        { 
+            font-size:24px;            
+            color: #fff;
+            font-weight: 500;
             position: relative;
             display: flex;
             gap: 1.5rem;
@@ -64,7 +57,7 @@ $button-radius: 12px;
                         display: block;
                         height: 100%;
                         width: 100%;
-                        filter: brightness(80%);
+                        filter: brightness(70%);
                     }
                 }
             }
@@ -73,6 +66,13 @@ $button-radius: 12px;
                 align-items: flex-start;
                 div{
                     position: relative;
+                    img{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        filter: brightness(80%);
+                    }
+
                     &:first-of-type{
                         &::after{
                             position: absolute;
@@ -95,30 +95,30 @@ $button-radius: 12px;
                             text-transform: capitalize;
                         }
                     }
-                    img{
-                        display: block;
-                        height: 100%;
-                        width: 100%;
-                        filter: brightness(80%);
-                    }
                 }
             }
         }
     }
     .section-two
     {
-        
         font-family: $Inter;
-        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
         .text-content{
             color: $black;
+            max-width: 70%;
             h3{
                 font-size: 40px;
                 font-weight: 800;
+                margin-bottom: 2rem;
             }
             p{
                 font-size: 1.125rem;
                 font-weight: 400;
+                margin-bottom: 2.5rem;
+                line-height: 1.8;  
             }
         }
         .btn{

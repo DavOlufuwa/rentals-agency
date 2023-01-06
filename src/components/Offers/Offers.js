@@ -11,19 +11,18 @@ const Offers = () => {
       <section className="section-one">
         <div className="row">
           <div>
-              <img src={PicOne} alt="" />
-
+              <img src={PicOne} alt="bed with stacked pillows" />
           </div>
           <div>
-              <img src={PicTwo} alt="" />
+              <img src={PicTwo} alt="Happy man wearing red sweatshirt" />
           </div>
         </div>
         <div className="row">
           <div>
-              <img src={PicThree} alt="" />
+              <img src={PicThree} alt="Two sprays for cleaning" />
           </div>
           <div>
-              <img src={PicFour} alt="" />
+              <img src={PicFour} alt="three friends gathered together" />
           </div>
         </div>
       </section>
