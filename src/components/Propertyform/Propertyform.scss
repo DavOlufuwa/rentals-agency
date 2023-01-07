@@ -1,0 +1,59 @@
+$form-shadow: 0px 4px 63px 0px #00000026;
+$Poppins: 'Poppins', sans-serif;
+$Inter : 'Inter', sans-serif;
+$greys: #737373;
+$input-borders: #DDDDDD;
+$backgrounds: #F9F9F9;
+$red : #F4511E;
+$black : #18191f;
+$blue : #252B42;
+
+.form-bg{
+    display: flex;
+    flex-direction: column;
+    padding:  2rem;
+
+    .title{
+        color:$black ;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+    
+        .form-title{
+            color: $red;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+
+            .form-control{
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    font-size: 17px;
+                    font-weight: 600;
+                    font-family: $Poppins;
+
+
+                    .required{
+                        color: $red;
+                        font-size: 8px;
+                        padding: 0 0 6px 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
