@@ -111,19 +111,6 @@ const Propertyform = () => {
                 />
             </div>
             <div className="form-control">
-                <label htmlFor="state">Room Type
-                    <FontAwesomeIcon
-                        icon={faStarOfLife}
-                        className="required"
-                    />
-                </label>
-                <select name="state" id="">
-                    <option value="">Select Room Type</option>
-                    <option value="Abuja">Self contained</option>
-                    <option value="Dubai">Room and Parlour</option>
-                </select>
-            </div>
-            <div className="form-control">
                 <label htmlFor="description">Description
                     <FontAwesomeIcon
                         icon={faStarOfLife}
@@ -131,16 +118,16 @@ const Propertyform = () => {
                     />
                 </label>
                 <textarea name="description" placeholder='Enter Description'>
-                    
+
                 </textarea>
             </div>
-            <div className="form-control-upload">
+            <div className="form-control">
                 <label htmlFor="upload">
                     upload files
                 </label>
-                <div {...getRootProps()}>
+                <div {...getRootProps()} className="upload">
                     <input {...getInputProps()} />
-                    <p>Drag 'n' drop some files here, or <span>Browse</span> </p>
+                    <p>Drag your images here, or <span>Browse</span> </p>
                     <p>Supported JPG, JPEG, PNG</p>
                 </div>
             </div>
