@@ -1,5 +1,5 @@
-import React from 'react'
-// import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import React, { useState } from 'react'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import Logo from '../../assets/icons/rental-logo.svg'
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -7,6 +7,7 @@ import './Header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown , faSearch} from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { Icon } from '@iconify/react';
 
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -18,6 +19,7 @@ L.Icon.Default.mergeOptions({
 
 const Header = () => {
   const transition = {type:'spring', duration : 3}
+  const[menu, setMenu] = useState(true)
 
   return (
     <div className='background'>
@@ -27,7 +29,7 @@ const Header = () => {
         <div className="logo">
           <img src={Logo} alt="" />
         </div>
-        <nav>
+        <nav className={menu ? "" : "open"}>
           <ul>
             <li>
               <a href="google.com">Home</a>
@@ -43,6 +45,13 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <div className="mobile-menu"
+        >
+        <Icon 
+          icon={menu ? "mdi:menu" : "mdi:hamburger-menu-back"}
+          onClick={()=>setMenu(!menu)}
+        />
+        </div>
       </header>
       {/* Navigation ends */}
       {/* Hero Section starts */}
@@ -60,7 +69,7 @@ const Header = () => {
           whileInView = {{opacity: 1, x: 0 }}
           className="info-map"
          >
-          {/* <MapContainer 
+          <MapContainer 
             center={[37.788817260213335, -122.4289174721632]} 
             zoom={13} 
             scrollWheelZoom={false}
@@ -78,7 +87,7 @@ const Header = () => {
               We are here, kindly visit us
             </Popup>
           </Marker>
-          </MapContainer> */}
+          </MapContainer>
           <div className="search-form">
             <div className="info">
               <div>

@@ -26,7 +26,6 @@ $light-blue: #23A6F0;
 header{
 
     display: flex;
-    position: relative;
     padding: 1rem 0;
     border-bottom: 1px solid $color;
     
@@ -77,6 +76,14 @@ header{
         }
     }
     // Nav ends
+    .mobile-menu{
+        position: absolute;
+        font-size: 40px;
+        color: $faint-borders;
+        right: 27px;
+        top: 20px;
+        display: none;
+    }
 }
 
 // Hero section starts
@@ -160,3 +167,132 @@ header{
     }
 }
 // Hero section ends
+
+// Mobile View
+
+@media screen and (max-width:1300px){
+
+    .hero-bg{
+        padding: 0 2rem;
+
+        header{
+            .logo{
+                margin-right: 8rem;
+            }
+        }
+       
+    }
+}
+
+
+@media screen and (max-width:1000px){
+
+    .hero-bg{
+        padding: 0 2rem;
+        height: 100vh;
+
+        header{
+            nav{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 20;
+                align-items: center;
+                justify-content: center;
+                background: rgba(31, 29, 29, 0.89);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);  
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    li{
+                        font-size: x-large;
+                        a{
+                            &::after{
+                                bottom: -18px;
+                            }
+                        }
+                    }
+                }
+                &.open{
+                    display: flex;
+                }
+            }
+            .mobile-menu{
+                display: block;
+                cursor: pointer;
+                z-index: 40;
+            }
+        }
+        .hero-section{
+            flex-direction: column;
+            padding: 0;
+            .text{
+                width: unset;
+                padding: .5rem;
+                text-align: center;
+                font-size: 30px;
+                line-height: 1.5;
+            }
+            .info-map{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding:2rem;
+
+                .mapOutlook{
+                    display: flex;
+                    height: 300px;
+                    width: 400px;
+                }
+            }
+            .search-form{
+                padding: .5rem;
+                div{
+                    padding: .25rem .5rem;
+                }
+
+                .info,.neighbourhood,.search{
+                    padding: .5rem;
+                    font-size: .85rem;
+                }
+                .search-icon{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+
+    .hero-bg{
+        .hero-section{
+            
+            .info-map{
+                
+                .mapOutlook{
+                    width: 320px;
+                }
+            }
+            .search-form{
+                margin-top: 1.5rem;
+                div{
+                    padding: .25rem .5rem;
+                }
+
+            }
+                
+        }
+    }
+}
+
