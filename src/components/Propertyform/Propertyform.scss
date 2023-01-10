@@ -88,6 +88,7 @@ $blue : #252B42;
                     font-family: $Inter;
                     resize: none;
                     display: flex;
+                    height: 9rem;
                 }
 
                 .upload{
@@ -172,7 +173,7 @@ $blue : #252B42;
 
 @media screen and (min-width:1100px) {
     .form-bg{
-        padding: 2rem 8.75rem;
+        padding: 6rem 8.75rem;
         .form{
             form{
                 padding: 0 2.5rem;
@@ -202,6 +203,13 @@ $blue : #252B42;
                             height: 6rem;
                         }                       
                     }
+                }
+            }
+            .btn{
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+                button{
+                    width: 20rem;
                 }
             }
         }

@@ -1,9 +1,10 @@
 import './App.scss'
+import Footer from './components/Footer/Footer';
 import Header from './components/Hero/Header';
-// import Offers from './components/Offers/Offers';
-// import Propertyform from './components/Propertyform/Propertyform';
-// import Propertylist from './components/Propertylist/Propertylist';
-// import Testimonial from './components/Testimonial/Testimonial';
+import Offers from './components/Offers/Offers';
+import Propertyform from './components/Propertyform/Propertyform';
+import Propertylist from './components/Propertylist/Propertylist';
+import Testimonial from './components/Testimonial/Testimonial';
 import Whyus from './components/Whyus/Whyus';
 
 
@@ -16,10 +17,11 @@ function App() {
     <div>
       <Header />
       <Whyus />
-      {/* <Propertylist/>
+      <Propertylist/>
       <Offers />
       <Propertyform/>
-      <Testimonial /> */}
+      <Testimonial />
+      <Footer/>
     </div>
   );
 }

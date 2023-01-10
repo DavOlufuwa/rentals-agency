@@ -1,0 +1,141 @@
+$Assistant : 'Assistant', sans-serif;
+$Inter : 'Inter', sans-serif;
+$bleus:#0A142F;
+$red : #F4511E;
+
+.footer-bg{
+    padding: 4rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    hr{
+        height: 2px;
+        background-color: $red;
+        color: $red;
+        border: none;
+    }
+
+    .section-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo-content{
+            font-size: 250px;
+            svg{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .details{
+            font-family: $Assistant;
+            color: $bleus;
+            .icons{
+                color: $red;
+                margin-right: 1rem;
+                font-size: 24px;
+            }
+            .address,.phone{
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin-bottom: .5rem;
+            }
+            .phone{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                margin-bottom: 2rem;
+            }
+            .socials{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                p{
+                    color: $bleus;
+                    font-size: 1.2rem;
+                    opacity: 50%;
+                }
+                .icons{
+                    display:grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1rem 2rem;
+                    
+                    .socials-icon{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+    .section-two{
+        font-family:$Inter;
+        font-weight: 400;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .links{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                li{
+                    text-transform: uppercase; 
+                }
+            }
+        }
+        .copywright{
+                opacity: 50%;
+                text-align: center;
+                font-size: 12px;
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .footer-bg{
+        padding-bottom: 2rem;
+        .section-one{
+            flex-direction: row;
+            justify-content: space-between;
+
+            .logo-content{
+                font-size: 350px;
+            }
+            .details{
+                .address{
+                    margin-bottom: 2rem;
+                }
+                .phone{
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                }
+                .socials{
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .section-two{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            
+            .links{
+                ul{
+                    flex-direction: row;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    .footer-bg{
+        padding: 4rem 8.75rem;
+    }
+}

@@ -117,17 +117,20 @@ $radius : 10px;
             align-items: center;
             gap: 2rem;
             .image-content{
-                align-self: center;
-                background-color: green;
+                
+                width: 100%;
+                margin-left: 6rem;
+                img{
+                    padding: 0;
+                }
             }
             .text-content{
                 display: grid;
                 flex-direction: column;
                 grid-template-columns: repeat(2,1fr);
-                width: 100%;    
-                
+                width: 100%;  
+
                 .data-box{
-                    background: #000;
                     text-align: center;
                     align-items: center;
                 }
