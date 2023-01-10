@@ -1,6 +1,6 @@
 # RENTALS AGENCY LANDING PAGE
-This is a home rentals agency website, created using the React Javascript Library.
+This is a Real estate rentals agency project, created using the React Javascript Library.
 
-React Hooks, Framer-motion, SASS and font-awesome were used in the creation of the website
+React Hooks, Framer-motion, SASS, Font awesome, Iconify and React-leaflet were used in the creation of this project
 
  
