@@ -3,7 +3,7 @@ import './Testimonial.scss'
 import { testimonials } from '../Data/testimonials'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle, faPause, faPlay } from '@fortawesome/free-solid-svg-icons'
-import testVideo from '../../assets/video/short_video.mp4'
+import testVideo from '../../assets/video/shortt_video.mp4'
 import quotes from '../../assets/images/quotashin.png'
 
 const Testimonial = () => {

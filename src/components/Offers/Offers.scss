@@ -14,7 +14,7 @@ $button-radius: 12px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.75rem;
         width: 100%;
         font-family: $Inter;
         .row
@@ -29,6 +29,7 @@ $button-radius: 12px;
 
 
             &:first-of-type{
+                position: relative;
                 div{
                     position: relative;
                     &:first-of-type{
@@ -192,6 +193,7 @@ $button-radius: 12px;
 @media screen and (max-width:400px){
     .offers-bg{
         .section-one{
+            gap: 1rem;
             .row{
                 font-size: 20px;
                 gap: 1rem;

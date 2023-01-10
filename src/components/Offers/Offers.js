@@ -4,26 +4,35 @@ import PicOne from '../../assets/images/flexible-leases.png'
 import PicTwo from '../../assets/images/day-happiness.png'
 import PicThree from '../../assets/images/monthly-house-cleaning.png'
 import PicFour from '../../assets/images/choose-your-roomate.png'
+import { motion } from 'framer-motion'
 
 const Offers = () => {
   return (
     <div className='offers-bg'>
       <section className="section-one">
         <div className="row">
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.102}}
+          >
               <img src={PicOne} alt="bed with stacked pillows" />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.102}}
+          >
               <img src={PicTwo} alt="Happy man wearing red sweatshirt" />
-          </div>
+          </motion.div>
         </div>
         <div className="row">
-          <div>
+          <motion.div
+            whileHover={{ scale: 1.102}}
+          >
               <img src={PicThree} alt="Two sprays for cleaning" />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.102}}
+          >
               <img src={PicFour} alt="three friends gathered together" />
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="section-two">

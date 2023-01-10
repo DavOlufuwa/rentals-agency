@@ -137,5 +137,31 @@ $red : #F4511E;
 @media screen and (min-width:1200px){
     .footer-bg{
         padding: 4rem 8.75rem;
+        .section-one{
+            .details{
+                .phone{
+                    flex-direction: row;
+                    justify-content: unset;
+                    gap: 9.5rem;
+                }
+                .socials{
+                    p{
+                        margin-right: 3rem;
+                    }
+                    .icons{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+
+                        gap: 1rem;
+                        .socials-icon{
+                            font-size: 24px;
+                            
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }

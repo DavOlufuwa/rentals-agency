@@ -20,6 +20,8 @@ L.Icon.Default.mergeOptions({
 const Header = () => {
   const transition = {type:'spring', duration : 3}
   const[menu, setMenu] = useState(true)
+  const bodyTag = document.getElementById('body')
+  bodyTag.style.overflow = menu ? "" : "hidden";
 
   return (
     <div className='background'>
@@ -31,16 +33,24 @@ const Header = () => {
         </div>
         <nav className={menu ? "" : "open"}>
           <ul>
-            <li>
+            <li
+              onClick={()=>setMenu(!menu)}
+            >
               <a href="google.com">Home</a>
             </li>
-            <li>
+            <li
+              onClick={()=>setMenu(!menu)}
+            >
               <a href="google.com">Landlords</a>
             </li>
-            <li>
+            <li
+              onClick={()=>setMenu(!menu)}
+            >
               <a href="google.com">Tenants</a>
             </li>
-            <li>
+            <li
+              onClick={()=>setMenu(!menu)}
+            >
               <a href="google.com">Contact us</a>
             </li>
           </ul>

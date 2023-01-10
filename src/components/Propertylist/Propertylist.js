@@ -4,8 +4,12 @@ import { propertyListData } from '../Data/propertyListData'
 import Bed from '../../assets/icons/bed.svg'
 import Shower from '../../assets/icons/shower.svg'
 import Size from '../../assets/icons/size.svg'
+import { motion } from 'framer-motion'
 
 const Propertylist = () => {
+
+    const transition = {type:'spring', duration : 3}
+
   return (
     <div className='list-bg'>
         <div className="heading">
@@ -16,7 +20,13 @@ const Propertylist = () => {
                 View all property
             </div>
         </div>
-        <div className="contents">
+        <motion.div 
+            className="contents"
+            initial ={{opacity: 0, y: -100}}
+            transition = {{...transition, duration: 3}}
+            whileInView = {{opacity: 1, y: 0 }}
+
+        >
             {
                 propertyListData.map((property, index)=>(
                     <div className="data-box" key={index}>
@@ -45,7 +55,7 @@ const Propertylist = () => {
                     </div>
                 ))
             }
-        </div>
+        </motion.div>
         <div className="menu">
             <div>First</div>
             <div>1</div>

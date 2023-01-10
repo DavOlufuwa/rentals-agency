@@ -13,7 +13,7 @@ import Whyus from './components/Whyus/Whyus';
 
 function App() {
 
-  return (   
+  return ( 
     <div>
       <Header />
       <Whyus />

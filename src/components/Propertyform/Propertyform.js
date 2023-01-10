@@ -4,8 +4,10 @@ import './Propertyform.scss'
 import { faStarOfLife } from '@fortawesome/free-solid-svg-icons'
 import { useDropzone } from 'react-dropzone'
 
-const Propertyform = () => {
 
+
+const Propertyform = () => {
+    
     // Image upload code
     const { getRootProps, getInputProps } = useDropzone({
         accept: 'image/*',

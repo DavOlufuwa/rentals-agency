@@ -13,7 +13,7 @@ $light-blue: #23A6F0;
 
 .hero-bg{
     height: 95vh;
-    background-image: url('../../assets/images/hero-image.svg');
+    background-image: url('../../assets/images/hero-img.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,7 +206,10 @@ header{
                 background: rgba(31, 29, 29, 0.89);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(4px);
-                -webkit-backdrop-filter: blur(4px);  
+                -webkit-backdrop-filter: blur(4px); 
+                transform: translateX(100vw); 
+                opacity: 0;
+                transition: all 10s ease-in-out;
 
                 ul{
                     display: flex;
@@ -223,6 +226,8 @@ header{
                 }
                 &.open{
                     display: flex;
+                    transform: translateX(0);
+                    opacity: 1;
                 }
             }
             .mobile-menu{

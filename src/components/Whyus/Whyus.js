@@ -5,7 +5,6 @@ import { subData } from '../Data/subData'
 import { motion } from 'framer-motion'
 
 const Whyus = () => {
-
     const transition = {type:'spring', duration : 3}
 
   return (
@@ -22,7 +21,12 @@ const Whyus = () => {
             >
                 <img src={PoolImage} alt="" />
             </motion.div>
-            <div className="text-content">
+            <motion.div
+                initial ={{opacity: 0, y: -100}}
+                transition = {{...transition, duration: 3}}
+                whileInView = {{opacity: 1, y: 0 }}
+                className="text-content"
+            >
                 {
                     subData.map((data, idx)=>(
                         <div className="data-box" key={idx}>
@@ -35,7 +39,7 @@ const Whyus = () => {
                         </div>
                     ))
                 }
-            </div>
+            </motion.div>
         </section>
     </div>
   )
