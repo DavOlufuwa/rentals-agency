@@ -21,7 +21,6 @@ $light-blue: #23A6F0;
     background-blend-mode: multiply;
     padding: 0 8.75rem;
     overflow-x: hidden;
-    
 }
 
 header{
@@ -190,7 +189,7 @@ header{
 
     .hero-bg{
         padding: 0 2rem;
-        height: 100vh;
+        height: max-content;
 
         header{
             nav{
@@ -297,7 +296,6 @@ header{
                 }
 
             }
-                
         }
     }
 }
