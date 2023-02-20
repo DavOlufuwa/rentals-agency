@@ -1,9 +1,9 @@
 import React from 'react'
 import './Offers.scss'
-import PicOne from '../../assets/images/flexible-leases.png'
-import PicTwo from '../../assets/images/day-happiness.png'
-import PicThree from '../../assets/images/monthly-house-cleaning.png'
-import PicFour from '../../assets/images/choose-your-roomate.png'
+import PicOne from '../../assets/images/flexible-leases.webp'
+import PicTwo from '../../assets/images/day-happiness.webp'
+import PicThree from '../../assets/images/monthly-house-cleaning.webp'
+import PicFour from '../../assets/images/choose-your-roomate.webp'
 import { motion } from 'framer-motion'
 
 const Offers = () => {

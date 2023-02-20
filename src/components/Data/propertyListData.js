@@ -1,7 +1,7 @@
 
 export const propertyListData = [
     {
-        source: require('../../assets/images/property-one.png'),
+        source: require('../../assets/images/property-one.webp'),
         address : '2578 Folsom street, san francisco, CA, 94110',
         roomType : 'Private Room',
         rent : '$1200/month',
@@ -10,7 +10,7 @@ export const propertyListData = [
         size : '2'       
     },
     {
-        source: require('../../assets/images/property-two.png'),
+        source: require('../../assets/images/property-two.webp'),
         address : '1020 Union street, san francisco, CA, 94133',
         roomType : 'Private Room',
         rent : '$2500/month',
@@ -19,7 +19,7 @@ export const propertyListData = [
         size : '2'       
     },
     {
-        source: require('../../assets/images/property-three.png'),
+        source: require('../../assets/images/property-three.webp'),
         address : '657 Morse street, san francisco, CA, 94112',
         roomType : 'Private Room',
         rent : '$1500/month',
@@ -28,7 +28,7 @@ export const propertyListData = [
         size : '1'       
     },
     {
-        source: require('../../assets/images/property-four.png'),
+        source: require('../../assets/images/property-four.webp'),
         address : '5715 Diamond Heights, san francisco, CA, 94131',
         roomType : 'Private Room',
         rent : '$1750/month',
@@ -37,7 +37,7 @@ export const propertyListData = [
         size : '2'       
     },
     {
-        source: require('../../assets/images/property-five.png'),
+        source: require('../../assets/images/property-five.webp'),
         address : '798 Stanyan street, san francisco, CA, 94176',
         roomType : 'Private Room',
         rent : '$1200/month',
@@ -46,7 +46,7 @@ export const propertyListData = [
         size : '2'       
     },
     {
-        source: require('../../assets/images/property-six.png'),
+        source: require('../../assets/images/property-six.webp'),
         address : '2578 Texas street, san francisco, CA, 94102',
         roomType : 'Private Room',
         rent : '$1000/month',
